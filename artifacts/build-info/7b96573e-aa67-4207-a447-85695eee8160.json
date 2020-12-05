@@ -1,0 +1,76 @@
+{
+  "id": "7b96573e-aa67-4207-a447-85695eee8160",
+  "_format": "hh-sol-build-info-1",
+  "solcVersion": "0.7.4",
+  "solcLongVersion": "0.7.4+commit.3f05b770",
+  "input": {
+    "language": "Solidity",
+    "sources": {
+      "contracts/dependencies/holyzeppelin/contracts/wip/abstract/Timelock.sol": {
+        "content": "// // COPIED FROM https://github.com/compound-finance/compound-protocol/blob/master/contracts/Governance/GovernorAlpha.sol\r\n// // Copyright 2020 Compound Labs, Inc.\r\n// // Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\r\n// // 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\r\n// // 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\r\n// // 3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\r\n// // THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\r\n// //\r\n// // Ctrl+f for XXX to see all the modifications.\r\n\r\n// // XXX: pragma solidity ^0.5.16;\r\n// pragma solidity 0.6.12;\r\n\r\n// // XXX: import \"./SafeMath.sol\";\r\n// import \"@openzeppelin/contracts/math/SafeMath.sol\";\r\n\r\n// contract Timelock {\r\n//     using SafeMath for uint;\r\n\r\n//     event NewAdmin(address indexed newAdmin);\r\n//     event NewPendingAdmin(address indexed newPendingAdmin);\r\n//     event NewDelay(uint indexed newDelay);\r\n//     event CancelTransaction(bytes32 indexed txHash, address indexed target, uint value, string signature,  bytes data, uint eta);\r\n//     event ExecuteTransaction(bytes32 indexed txHash, address indexed target, uint value, string signature,  bytes data, uint eta);\r\n//     event QueueTransaction(bytes32 indexed txHash, address indexed target, uint value, string signature, bytes data, uint eta);\r\n\r\n//     uint public constant GRACE_PERIOD = 14 days;\r\n//     uint public constant MINIMUM_DELAY = 2 days;\r\n//     uint public constant MAXIMUM_DELAY = 30 days;\r\n\r\n//     address public admin;\r\n//     address public pendingAdmin;\r\n//     uint public delay;\r\n//     bool public admin_initialized;\r\n\r\n//     mapping (bytes32 => bool) public queuedTransactions;\r\n\r\n\r\n//     constructor(address admin_, uint delay_) public {\r\n//         require(delay_ >= MINIMUM_DELAY, \"Timelock::constructor: Delay must exceed minimum delay.\");\r\n//         require(delay_ <= MAXIMUM_DELAY, \"Timelock::constructor: Delay must not exceed maximum delay.\");\r\n\r\n//         admin = admin_;\r\n//         delay = delay_;\r\n//         admin_initialized = false;\r\n//     }\r\n\r\n//     // XXX: function() external payable { }\r\n//     receive() external payable { }\r\n\r\n//     function setDelay(uint delay_) public {\r\n//         require(msg.sender == address(this), \"Timelock::setDelay: Call must come from Timelock.\");\r\n//         require(delay_ >= MINIMUM_DELAY, \"Timelock::setDelay: Delay must exceed minimum delay.\");\r\n//         require(delay_ <= MAXIMUM_DELAY, \"Timelock::setDelay: Delay must not exceed maximum delay.\");\r\n//         delay = delay_;\r\n\r\n//         emit NewDelay(delay);\r\n//     }\r\n\r\n//     function acceptAdmin() public {\r\n//         require(msg.sender == pendingAdmin, \"Timelock::acceptAdmin: Call must come from pendingAdmin.\");\r\n//         admin = msg.sender;\r\n//         pendingAdmin = address(0);\r\n\r\n//         emit NewAdmin(admin);\r\n//     }\r\n\r\n//     function setPendingAdmin(address pendingAdmin_) public {\r\n//         // allows one time setting of admin for deployment purposes\r\n//         if (admin_initialized) {\r\n//             require(msg.sender == address(this), \"Timelock::setPendingAdmin: Call must come from Timelock.\");\r\n//         } else {\r\n//             require(msg.sender == admin, \"Timelock::setPendingAdmin: First call must come from admin.\");\r\n//             admin_initialized = true;\r\n//         }\r\n//         pendingAdmin = pendingAdmin_;\r\n\r\n//         emit NewPendingAdmin(pendingAdmin);\r\n//     }\r\n\r\n//     function queueTransaction(address target, uint value, string memory signature, bytes memory data, uint eta) public returns (bytes32) {\r\n//         require(msg.sender == admin, \"Timelock::queueTransaction: Call must come from admin.\");\r\n//         require(eta >= getBlockTimestamp().add(delay), \"Timelock::queueTransaction: Estimated execution block must satisfy delay.\");\r\n\r\n//         bytes32 txHash = keccak256(abi.encode(target, value, signature, data, eta));\r\n//         queuedTransactions[txHash] = true;\r\n\r\n//         emit QueueTransaction(txHash, target, value, signature, data, eta);\r\n//         return txHash;\r\n//     }\r\n\r\n//     function cancelTransaction(address target, uint value, string memory signature, bytes memory data, uint eta) public {\r\n//         require(msg.sender == admin, \"Timelock::cancelTransaction: Call must come from admin.\");\r\n\r\n//         bytes32 txHash = keccak256(abi.encode(target, value, signature, data, eta));\r\n//         queuedTransactions[txHash] = false;\r\n\r\n//         emit CancelTransaction(txHash, target, value, signature, data, eta);\r\n//     }\r\n\r\n//     function executeTransaction(address target, uint value, string memory signature, bytes memory data, uint eta) public payable returns (bytes memory) {\r\n//         require(msg.sender == admin, \"Timelock::executeTransaction: Call must come from admin.\");\r\n\r\n//         bytes32 txHash = keccak256(abi.encode(target, value, signature, data, eta));\r\n//         require(queuedTransactions[txHash], \"Timelock::executeTransaction: Transaction hasn't been queued.\");\r\n//         require(getBlockTimestamp() >= eta, \"Timelock::executeTransaction: Transaction hasn't surpassed time lock.\");\r\n//         require(getBlockTimestamp() <= eta.add(GRACE_PERIOD), \"Timelock::executeTransaction: Transaction is stale.\");\r\n\r\n//         queuedTransactions[txHash] = false;\r\n\r\n//         bytes memory callData;\r\n\r\n//         if (bytes(signature).length == 0) {\r\n//             callData = data;\r\n//         } else {\r\n//             callData = abi.encodePacked(bytes4(keccak256(bytes(signature))), data);\r\n//         }\r\n\r\n//         // solium-disable-next-line security/no-call-value\r\n//         (bool success, bytes memory returnData) = target.call.value(value)(callData);\r\n//         require(success, \"Timelock::executeTransaction: Transaction execution reverted.\");\r\n\r\n//         emit ExecuteTransaction(txHash, target, value, signature, data, eta);\r\n\r\n//         return returnData;\r\n//     }\r\n\r\n//     function getBlockTimestamp() internal view returns (uint) {\r\n//         // solium-disable-next-line security/no-block-members\r\n//         return block.timestamp;\r\n//     }\r\n// }"
+      }
+    },
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  "output": {
+    "errors": [
+      {
+        "component": "general",
+        "errorCode": "1878",
+        "formattedMessage": "contracts/dependencies/holyzeppelin/contracts/wip/abstract/Timelock.sol: Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n",
+        "message": "SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.",
+        "severity": "warning",
+        "sourceLocation": {
+          "end": -1,
+          "file": "contracts/dependencies/holyzeppelin/contracts/wip/abstract/Timelock.sol",
+          "start": -1
+        },
+        "type": "Warning"
+      },
+      {
+        "component": "general",
+        "errorCode": "3420",
+        "formattedMessage": "contracts/dependencies/holyzeppelin/contracts/wip/abstract/Timelock.sol: Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.7.4;\"\n",
+        "message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.7.4;\"",
+        "severity": "warning",
+        "sourceLocation": {
+          "end": -1,
+          "file": "contracts/dependencies/holyzeppelin/contracts/wip/abstract/Timelock.sol",
+          "start": -1
+        },
+        "type": "Warning"
+      }
+    ],
+    "sources": {
+      "contracts/dependencies/holyzeppelin/contracts/wip/abstract/Timelock.sol": {
+        "ast": {
+          "absolutePath": "contracts/dependencies/holyzeppelin/contracts/wip/abstract/Timelock.sol",
+          "exportedSymbols": {},
+          "id": 1,
+          "nodeType": "SourceUnit",
+          "nodes": [],
+          "src": "7249:0:0"
+        },
+        "id": 0
+      }
+    }
+  }
+}

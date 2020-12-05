@@ -1,0 +1,64 @@
+{
+  "id": "e13c39bd-dbcf-4a58-87b2-5e834167bec4",
+  "_format": "hh-sol-build-info-1",
+  "solcVersion": "0.7.4",
+  "solcLongVersion": "0.7.4+commit.3f05b770",
+  "input": {
+    "language": "Solidity",
+    "sources": {
+      "contracts/dependencies/holyzeppelin/contracts/wip/interfaces/uniswapV2/IUniswapV2ERC20.sol": {
+        "content": "// // SPDX-License-Identifier: AGPL-3.0-or-later\r\n// pragma solidity 0.7.4;\r\n\r\n// import \"hardhat/console.sol\";\r\n\r\n// interface IUniswapV2ERC20 {\r\n//     event Approval(address indexed owner, address indexed spender, uint value);\r\n//     event Transfer(address indexed from, address indexed to, uint value);\r\n\r\n//     function name() external pure returns (string memory);\r\n//     function symbol() external pure returns (string memory);\r\n//     function decimals() external pure returns (uint8);\r\n//     function totalSupply() external view returns (uint);\r\n//     function balanceOf(address owner) external view returns (uint);\r\n//     function allowance(address owner, address spender) external view returns (uint);\r\n\r\n//     function approve(address spender, uint value) external returns (bool);\r\n//     function transfer(address to, uint value) external returns (bool);\r\n//     function transferFrom(address from, address to, uint value) external returns (bool);\r\n\r\n//     function DOMAIN_SEPARATOR() external view returns (bytes32);\r\n//     function PERMIT_TYPEHASH() external pure returns (bytes32);\r\n//     function nonces(address owner) external view returns (uint);\r\n\r\n//     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external;\r\n// }"
+      }
+    },
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  "output": {
+    "errors": [
+      {
+        "component": "general",
+        "errorCode": "3420",
+        "formattedMessage": "contracts/dependencies/holyzeppelin/contracts/wip/interfaces/uniswapV2/IUniswapV2ERC20.sol: Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.7.4;\"\n",
+        "message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.7.4;\"",
+        "severity": "warning",
+        "sourceLocation": {
+          "end": -1,
+          "file": "contracts/dependencies/holyzeppelin/contracts/wip/interfaces/uniswapV2/IUniswapV2ERC20.sol",
+          "start": -1
+        },
+        "type": "Warning"
+      }
+    ],
+    "sources": {
+      "contracts/dependencies/holyzeppelin/contracts/wip/interfaces/uniswapV2/IUniswapV2ERC20.sol": {
+        "ast": {
+          "absolutePath": "contracts/dependencies/holyzeppelin/contracts/wip/interfaces/uniswapV2/IUniswapV2ERC20.sol",
+          "exportedSymbols": {},
+          "id": 1,
+          "license": "AGPL-3.0-or-later",
+          "nodeType": "SourceUnit",
+          "nodes": [],
+          "src": "1307:0:0"
+        },
+        "id": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "f1fff24f-6665-4f0c-95aa-4df10dcf088e",
+  "_format": "hh-sol-build-info-1",
+  "solcVersion": "0.7.4",
+  "solcLongVersion": "0.7.4+commit.3f05b770",
+  "input": {
+    "language": "Solidity",
+    "sources": {
+      "contracts/dependencies/holyzeppelin/contracts/wip/libraries/datatypes/collections/EnumerableSet.sol": {
+        "content": "// // SPDX-License-Identifier: AGPL-3.0-or-later\r\n// pragma solidity 0.7.4;\r\n\r\n// /**\r\n//  * @dev Library for managing\r\n//  * https://en.wikipedia.org/wiki/Set_(abstract_data_type)[sets] of primitive\r\n//  * types.\r\n//  *\r\n//  * Sets have the following properties:\r\n//  *\r\n//  * - Elements are added, removed, and checked for existence in constant time\r\n//  * (O(1)).\r\n//  * - Elements are enumerated in O(n). No guarantees are made on the ordering.\r\n//  *\r\n//  * ```\r\n//  * contract Example {\r\n//  *     // Add the library methods\r\n//  *     using EnumerableSet for EnumerableSet.AddressSet;\r\n//  *\r\n//  *     // Declare a set state variable\r\n//  *     EnumerableSet.AddressSet private mySet;\r\n//  * }\r\n//  * ```\r\n//  *\r\n//  * As of v3.0.0, only sets of type `address` (`AddressSet`) and `uint256`\r\n//  * (`UintSet`) are supported.\r\n//  */\r\n// library EnumerableSet {\r\n//     // To implement this library for multiple types with as little code\r\n//     // repetition as possible, we write it in terms of a generic Set type with\r\n//     // bytes32 values.\r\n//     // The Set implementation uses private functions, and user-facing\r\n//     // implementations (such as AddressSet) are just wrappers around the\r\n//     // underlying Set.\r\n//     // This means that we can only create new EnumerableSets for types that fit\r\n//     // in bytes32.\r\n\r\n//     struct Set {\r\n//         // Storage of set values\r\n//         bytes32[] _values;\r\n\r\n//         // Position of the value in the `values` array, plus 1 because index 0\r\n//         // means a value is not in the set.\r\n//         mapping (bytes32 => uint256) _indexes;\r\n//     }\r\n\r\n//     /**\r\n//      * @dev Add a value to a set. O(1).\r\n//      *\r\n//      * Returns true if the value was added to the set, that is if it was not\r\n//      * already present.\r\n//      */\r\n//     function _add(Set storage set, bytes32 value) private returns (bool) {\r\n//         if (!_contains(set, value)) {\r\n//             set._values.push(value);\r\n//             // The value is stored at length-1, but we add 1 to all indexes\r\n//             // and use 0 as a sentinel value\r\n//             set._indexes[value] = set._values.length;\r\n//             return true;\r\n//         } else {\r\n//             return false;\r\n//         }\r\n//     }\r\n\r\n//     /**\r\n//      * @dev Removes a value from a set. O(1).\r\n//      *\r\n//      * Returns true if the value was removed from the set, that is if it was\r\n//      * present.\r\n//      */\r\n//     function _remove(Set storage set, bytes32 value) internal returns (bool) {\r\n//         // We read and store the value's index to prevent multiple reads from the same storage slot\r\n//         uint256 valueIndex = set._indexes[value];\r\n\r\n//         if (valueIndex != 0) { // Equivalent to contains(set, value)\r\n//             // To delete an element from the _values array in O(1), we swap the element to delete with the last one in\r\n//             // the array, and then remove the last element (sometimes called as 'swap and pop').\r\n//             // This modifies the order of the array, as noted in {at}.\r\n\r\n//             uint256 toDeleteIndex = valueIndex - 1;\r\n//             uint256 lastIndex = set._values.length - 1;\r\n\r\n//             // When the value to delete is the last one, the swap operation is unnecessary. However, since this occurs\r\n//             // so rarely, we still do the swap anyway to avoid the gas cost of adding an 'if' statement.\r\n\r\n//             bytes32 lastvalue = set._values[lastIndex];\r\n\r\n//             // Move the last value to the index where the value to delete is\r\n//             set._values[toDeleteIndex] = lastvalue;\r\n//             // Update the index for the moved value\r\n//             set._indexes[lastvalue] = toDeleteIndex + 1; // All indexes are 1-based\r\n\r\n//             // Delete the slot where the moved value was stored\r\n//             set._values.pop();\r\n\r\n//             // Delete the index for the deleted slot\r\n//             delete set._indexes[value];\r\n\r\n//             return true;\r\n//         } else {\r\n//             return false;\r\n//         }\r\n//     }\r\n\r\n//     /**\r\n//      * @dev Returns true if the value is in the set. O(1).\r\n//      */\r\n//     function _contains(Set storage set, bytes32 value) internal view returns (bool) {\r\n//         return set._indexes[value] != 0;\r\n//     }\r\n\r\n//     /**\r\n//      * @dev Returns the number of values on the set. O(1).\r\n//      */\r\n//     function _length(Set storage set) internal view returns (uint256) {\r\n//         return set._values.length;\r\n//     }\r\n\r\n//     /**\r\n//      * @dev Returns the value stored at position `index` in the set. O(1).\r\n//      *\r\n//      * Note that there are no guarantees on the ordering of values inside the\r\n//      * array, and it may change when more values are added or removed.\r\n//      *\r\n//      * Requirements:\r\n//      *\r\n//      * - `index` must be strictly less than {length}.\r\n//      */\r\n//     function _at(Set storage set, uint256 index) internal view returns (bytes32) {\r\n//         require(set._values.length > index, \"EnumerableSet: index out of bounds\");\r\n//         return set._values[index];\r\n//     }\r\n\r\n// }"
+      }
+    },
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  "output": {
+    "errors": [
+      {
+        "component": "general",
+        "errorCode": "3420",
+        "formattedMessage": "contracts/dependencies/holyzeppelin/contracts/wip/libraries/datatypes/collections/EnumerableSet.sol: Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.7.4;\"\n",
+        "message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.7.4;\"",
+        "severity": "warning",
+        "sourceLocation": {
+          "end": -1,
+          "file": "contracts/dependencies/holyzeppelin/contracts/wip/libraries/datatypes/collections/EnumerableSet.sol",
+          "start": -1
+        },
+        "type": "Warning"
+      }
+    ],
+    "sources": {
+      "contracts/dependencies/holyzeppelin/contracts/wip/libraries/datatypes/collections/EnumerableSet.sol": {
+        "ast": {
+          "absolutePath": "contracts/dependencies/holyzeppelin/contracts/wip/libraries/datatypes/collections/EnumerableSet.sol",
+          "exportedSymbols": {},
+          "id": 1,
+          "license": "AGPL-3.0-or-later",
+          "nodeType": "SourceUnit",
+          "nodes": [],
+          "src": "5137:0:0"
+        },
+        "id": 0
+      }
+    }
+  }
+}

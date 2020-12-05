@@ -1,0 +1,64 @@
+{
+  "id": "ae80fab8-7bc1-45b0-80a2-a28ef7c5811a",
+  "_format": "hh-sol-build-info-1",
+  "solcVersion": "0.7.4",
+  "solcLongVersion": "0.7.4+commit.3f05b770",
+  "input": {
+    "language": "Solidity",
+    "sources": {
+      "contracts/dependencies/holyzeppelin/contracts/wip/libraries/utils/math/FinancialSafeMath.sol": {
+        "content": "// // SPDX-License-Identifier: AGPL-3.0-or-later\r\n// pragma solidity 0.7.4;\r\n\r\n// import \"hardhat/console.sol\";\r\n\r\n// import \"./SafeFullMath.sol\";\r\n\r\n// library FinancialSafeMath {\r\n\r\n//     using SafeFullMath for uint256;\r\n\r\n//         function quadraticPricing( uint256 payment ) internal pure returns (uint256) {\r\n//         return payment.mul(2).sqrrt();\r\n//     }\r\n\r\n//         function bondingPrice( uint256 multiplier, uint256 supply ) internal pure returns (uint256) {\r\n//         return multiplier.mul( supply );\r\n//     }\r\n// }"
+      }
+    },
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  "output": {
+    "errors": [
+      {
+        "component": "general",
+        "errorCode": "3420",
+        "formattedMessage": "contracts/dependencies/holyzeppelin/contracts/wip/libraries/utils/math/FinancialSafeMath.sol: Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.7.4;\"\n",
+        "message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.7.4;\"",
+        "severity": "warning",
+        "sourceLocation": {
+          "end": -1,
+          "file": "contracts/dependencies/holyzeppelin/contracts/wip/libraries/utils/math/FinancialSafeMath.sol",
+          "start": -1
+        },
+        "type": "Warning"
+      }
+    ],
+    "sources": {
+      "contracts/dependencies/holyzeppelin/contracts/wip/libraries/utils/math/FinancialSafeMath.sol": {
+        "ast": {
+          "absolutePath": "contracts/dependencies/holyzeppelin/contracts/wip/libraries/utils/math/FinancialSafeMath.sol",
+          "exportedSymbols": {},
+          "id": 1,
+          "license": "AGPL-3.0-or-later",
+          "nodeType": "SourceUnit",
+          "nodes": [],
+          "src": "537:0:0"
+        },
+        "id": 0
+      }
+    }
+  }
+}

@@ -14,7 +14,7 @@ contract ErisToken is Divine {
 
     uint8 public transferFeePercentageX100;
     
-    constructor () Divine() {
+    constructor () Divine( "ERIS", "ERIS" ) {
         console.log("ERIS::constructor: Instantiating ERIS");
         transferFeePercentageX100 = 100;
         uint256 amountToMint_ = 50000 * 1e18;
@@ -24,27 +24,27 @@ contract ErisToken is Divine {
         console.log("ERIS::constructor: Instantiated ERIS");
     }
 
-    function _transfer(address sender, address recipient, uint256 amount) internal override(ERC20) {
-        require(sender != address(0), "ERC20: transfer from the zero address");
-        require(recipient != address(0), "ERC20: transfer to the zero address");
+    // function _transfer(address sender, address recipient, uint256 amount) internal override(ERC20) {
+    //     require(sender != address(0), "ERC20: transfer from the zero address");
+    //     require(recipient != address(0), "ERC20: transfer to the zero address");
 
-        _beforeTokenTransfer(sender, recipient, amount);
+    //     _beforeTokenTransfer(sender, recipient, amount);
 
-        uint256 amountAfterTransferFee_ = _deductTransferFee( amount );
-        console.log("Transfer amount after fee is %s.", amountAfterTransferFee_);
-        uint256 transferFeeAmount_ = _calculateTransferFeeAmount( amount );
-        console.log("Transfer fee amount of %s.", transferFeeAmount_);
+    //     uint256 amountAfterTransferFee_ = _deductTransferFee( amount );
+    //     console.log("Transfer amount after fee is %s.", amountAfterTransferFee_);
+    //     uint256 transferFeeAmount_ = _calculateTransferFeeAmount( amount );
+    //     console.log("Transfer fee amount of %s.", transferFeeAmount_);
 
-        _balances[sender] = _balances[sender].sub(amount, "ERC20: transfer amount exceeds balance");
-        _balances[recipient] = _balances[recipient].add(amountAfterTransferFee_);
-        emit Transfer(sender, recipient, amountAfterTransferFee_);
-    }
+    //     _balances[sender] = _balances[sender].sub(amount, "ERC20: transfer amount exceeds balance");
+    //     _balances[recipient] = _balances[recipient].add(amountAfterTransferFee_);
+    //     emit Transfer(sender, recipient, amountAfterTransferFee_);
+    // }
 
-    function _deductTransferFee( uint256 amountTrasferred_ ) internal returns (uint256) {
-        return amountTrasferred_.substractPercentage(transferFeePercentageX100);
-    }
+    // // function _deductTransferFee( uint256 amountTrasferred_ ) internal returns (uint256) {
+    // //     return amountTrasferred_.substractPercentage(transferFeePercentageX100);
+    // // }
 
-    function _calculateTransferFeeAmount( uint256 amount_ ) internal returns ( uint256 ) {
-        return amount_.percentageAmount( transferFeePercentageX100 );
-    }
+    // function _calculateTransferFeeAmount( uint256 amount_ ) internal returns ( uint256 ) {
+    //     return amount_.percentageAmount( transferFeePercentageX100 );
+    // }
 }

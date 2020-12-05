@@ -1,0 +1,64 @@
+{
+  "id": "e888daeb-6b4d-401b-a11a-f667d213afee",
+  "_format": "hh-sol-build-info-1",
+  "solcVersion": "0.7.4",
+  "solcLongVersion": "0.7.4+commit.3f05b770",
+  "input": {
+    "language": "Solidity",
+    "sources": {
+      "contracts/dependencies/holyzeppelin/contracts/wip/libraries/security/events/RoleBasedAccessControlEvents.sol": {
+        "content": "// // SPDX-License-Identifier: AGPL-3.0-or-later\r\n// pragma solidity 0.7.4;\r\n\r\n// library RoleBasedAccessControlEvents {\r\n\r\n//     event RoleAdminChanged( bytes32 indexed role, bytes32 indexed previousAdminRole, bytes32 indexed newAdminRole );\r\n\r\n//     event RoleApproverChanged( bytes32 indexed role, bytes32 indexed previousApproverRole, bytes32 indexed newApproverRole );\r\n\r\n//     event RestrictedSharedRoleAdded( bytes32 indexed roleWithRestrictedSharedRole, bytes32 indexed addedRestrictedSharedRole );\r\n\r\n//     event RoleGranted( bytes32 indexed role, address indexed account, address indexed sender );\r\n\r\n//     event RoleApproved( bytes32 indexed role, address indexed approver, address indexed account );\r\n\r\n//     event ApprovalRevoked( bytes32 indexed role, address indexed approver, address indexed disapprovedAccount );\r\n\r\n//     event RoleRevoked( bytes32 indexed role, address indexed account, address indexed sender );\r\n// }"
+      }
+    },
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  "output": {
+    "errors": [
+      {
+        "component": "general",
+        "errorCode": "3420",
+        "formattedMessage": "contracts/dependencies/holyzeppelin/contracts/wip/libraries/security/events/RoleBasedAccessControlEvents.sol: Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.7.4;\"\n",
+        "message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.7.4;\"",
+        "severity": "warning",
+        "sourceLocation": {
+          "end": -1,
+          "file": "contracts/dependencies/holyzeppelin/contracts/wip/libraries/security/events/RoleBasedAccessControlEvents.sol",
+          "start": -1
+        },
+        "type": "Warning"
+      }
+    ],
+    "sources": {
+      "contracts/dependencies/holyzeppelin/contracts/wip/libraries/security/events/RoleBasedAccessControlEvents.sol": {
+        "ast": {
+          "absolutePath": "contracts/dependencies/holyzeppelin/contracts/wip/libraries/security/events/RoleBasedAccessControlEvents.sol",
+          "exportedSymbols": {},
+          "id": 1,
+          "license": "AGPL-3.0-or-later",
+          "nodeType": "SourceUnit",
+          "nodes": [],
+          "src": "943:0:0"
+        },
+        "id": 0
+      }
+    }
+  }
+}
