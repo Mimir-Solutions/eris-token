@@ -4,7 +4,7 @@ pragma solidity 0.7.4;
 import "hardhat/console.sol";
 
 import "./abstract/Divine.sol";
-import "./dependencies/holyzeppelin/contracts/math/SafeMath.sol";
+import "./dependencies/holyzeppelin/contracts/utils/math/SafeMath.sol";
 // import "./libraries/datatypes/primitives/Address.sol";
 // import "../libraries/datatypes/collections/EnumerableSet.sol";
 
