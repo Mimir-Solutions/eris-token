@@ -14,11 +14,6 @@ contract ErisToken is Divine {
     
     constructor () Divine( "ERIS", "ERIS" ) {
         console.log("ERIS::constructor: Instantiating ERIS");
-        // transferFeePercentageX100 = 100;
-        // uint256 amountToMint_ = 50000 * 1e18;
-        // console.log("Minting %s ERIS.", amountToMint_ );
-        // _mint(Context._msgSender(), amountToMint_  );
-        // console.log("Minted %s ERIS.", totalSupply());
         console.log("ERIS::constructor: Instantiated ERIS");
     }
 }

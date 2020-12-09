@@ -105,8 +105,7 @@ describe(
                         expect( await eris.decimals() ).to.equal(18);
                         //console.log("Deployment::DeploymentSuccess: token burnAddress.");
                         // expect( await eris.burnAddress() ).to.equal(burnAddress);
-                        console.log("Test::Deployment::DeploymentSuccess: token totalSupply equals %s.", ethers.utils.parseUnits( String( 50000 ), "ether" ) );
-                        expect( await eris.totalSupply() ).to.equal( ethers.utils.parseUnits( String( 50000 ), "ether" ) );
+                        expect( await eris.totalSupply() ).to.equal( ethers.utils.parseUnits( String( 0 ), "ether" ) );
                         //console.log("Deployment::DeploymentSuccess: owner.");
                         // expect( await eris.owner() ).to.equal(owner.address);
                         //console.log("Deployment::DeploymentSuccess: devAddress.");
@@ -115,7 +114,7 @@ describe(
                         // expect( await eris.charityAddress() ).to.equal(charity.address);
                         //console.log("Deployment::DeploymentSuccess: qplgmeActive.");
                         // expect( await eris.qplgmeActive() ).to.equal(false);
-                        expect( await eris.connect(deployer).balanceOf(deployer.address) ).to.equal( String( ethers.utils.parseUnits( String( 50000 ), "ether" ) ) );
+                        expect( await eris.connect(deployer).balanceOf(deployer.address) ).to.equal( String( ethers.utils.parseUnits( String( 0 ), "ether" ) ) );
                         expect( await eris.connect(deployer).balanceOf(buyer1.address) ).to.equal( String( 0 ) );
                         // expect( await eris.connect(owner).balanceOf(charity.address) ).to.equal( String( 0 ) );
                         // expect( await eris.connect(owner).balanceOf( eris.uniswapV2ErisWETHDEXPairAddress() ) ).to.equal( String( 0 ) );

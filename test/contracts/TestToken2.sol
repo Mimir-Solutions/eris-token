@@ -3,9 +3,9 @@ pragma solidity 0.7.4;
 
 import "hardhat/console.sol";
 
-import "../../contracts/abstract/ERC20.sol";
-import "../../contracts/libraries/utils/math/SafeMath.sol";
-import "../../contracts/libraries/datatypes/primitives/Address.sol";
+import "../../contracts/dependencies/holyzeppelin/contracts/token/ERC20/ERC20.sol";
+import "../../contracts/dependencies/holyzeppelin/contracts/utils/math/SafeMath.sol";
+import "../../contracts/dependencies/holyzeppelin/contracts/datatypes/primitives/Address.sol";
 
 contract TestToken2 is ERC20 {
 

@@ -5,10 +5,6 @@ import "hardhat/console.sol";
 
 import "../dependencies/holyzeppelin/contracts/token/ERC20/ERC20Burnable.sol";
 import "../dependencies/holyzeppelin/contracts/security/Context.sol";
-// import "./AccessControl.sol";
-// import ".,/libraries/utils/math/SafeMath.sol";
-// import ".,/libraries/datatypes/primitives/Address.sol";
-// import "../libraries/datatypes/collections/EnumerableSet.sol";
 
 /**
  * Intended to gather other abstract contracts and interfaces for Eris.
