@@ -5576,46 +5576,9 @@
         "IERC721Receiver"
       ]
     },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ERC721ReceiverMock.sol": {
-      "lastModificationDate": 1607238663509,
-      "contentHash": "6aae23ec1cbd2ac518cab10461492ef1",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ERC721ReceiverMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../token/ERC721/IERC721Receiver.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ERC721ReceiverMock"
-      ]
-    },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\token\\ERC721\\ERC721.sol": {
-      "lastModificationDate": 1607238663590,
-      "contentHash": "ff38282b8788c7430488014e35c7292a",
+      "lastModificationDate": 1607498664895,
+      "contentHash": "4203066809cfbd486ec3a55176c30a82",
       "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/token/ERC721/ERC721.sol",
       "solcConfig": {
         "version": "0.7.4",
@@ -5647,7 +5610,7 @@
         "./IERC721Enumerable.sol",
         "./IERC721Receiver.sol",
         "../../introspection/ERC165.sol",
-        "../../utils/math/SafeMath.sol",
+        "../../math/SafeMath.sol",
         "../../utils/Address.sol",
         "../../datatypes/collections/EnumerableSet.sol",
         "../../utils/EnumerableMap.sol",
@@ -5844,42 +5807,6 @@
         "ERC165"
       ]
     },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\utils\\math\\SafeMath.sol": {
-      "lastModificationDate": 1607238663622,
-      "contentHash": "169d110fe725894690a79ec63fba29bd",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/utils/math/SafeMath.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "SafeMath"
-      ]
-    },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\utils\\Address.sol": {
       "lastModificationDate": 1607238663609,
       "contentHash": "98f785ff7a3144f5ae8d09515f918c69",
@@ -5917,7 +5844,7 @@
       ]
     },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\datatypes\\collections\\EnumerableSet.sol": {
-      "lastModificationDate": 1607486986241,
+      "lastModificationDate": 1607497186266,
       "contentHash": "d036c810bd9299920a4a7d67227b167a",
       "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/datatypes/collections/EnumerableSet.sol",
       "solcConfig": {
@@ -5989,8 +5916,8 @@
       ]
     },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\utils\\Strings.sol": {
-      "lastModificationDate": 1607238663627,
-      "contentHash": "c7e959c927c740158bcc22e9032907b9",
+      "lastModificationDate": 1607498701590,
+      "contentHash": "a764ec9391a9db41eb00fc9bebc032fc",
       "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/utils/Strings.sol",
       "solcConfig": {
         "version": "0.7.4",
@@ -6016,7 +5943,7 @@
       },
       "imports": [
         "hardhat/console.sol",
-        "../utils/math/SafeMath.sol"
+        "../math/SafeMath.sol"
       ],
       "versionPragmas": [
         "0.7.4"
@@ -6062,8 +5989,8 @@
       ]
     },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\presets\\ERC721PresetMinterPauserAutoId.sol": {
-      "lastModificationDate": 1607238663553,
-      "contentHash": "3edf7f5def0d2736cc3fbce98c9305bb",
+      "lastModificationDate": 1607532455019,
+      "contentHash": "1a06211dd9c28b5d919214a144d1fa5f",
       "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/presets/ERC721PresetMinterPauserAutoId.sol",
       "solcConfig": {
         "version": "0.7.4",
@@ -6091,7 +6018,7 @@
         "hardhat/console.sol",
         "../access/AccessControl.sol",
         "../security/Context.sol",
-        "../utils/Counters.sol",
+        "../math/Counters.sol",
         "../token/ERC721/ERC721.sol",
         "../token/ERC721/ERC721Burnable.sol",
         "../token/ERC721/ERC721Pausable.sol"
@@ -6140,43 +6067,6 @@
       ],
       "artifacts": [
         "AccessControl"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\utils\\Counters.sol": {
-      "lastModificationDate": 1607238663610,
-      "contentHash": "dfb6079988ea2e008bbb16571508d572",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/utils/Counters.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../utils/math/SafeMath.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "Counters"
       ]
     },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\token\\ERC721\\ERC721Burnable.sol": {
@@ -6292,43 +6182,6 @@
         "Pausable"
       ]
     },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\PausableMock.sol": {
-      "lastModificationDate": 1607238663526,
-      "contentHash": "e68b855a80cd3b5a283939b66e3b0cac",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/PausableMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../utils/Pausable.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "PausableMock"
-      ]
-    },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\token\\ERC20\\ERC20Pausable.sol": {
       "lastModificationDate": 1607238663584,
       "contentHash": "9341512272e686c3fd46152eb72e8d6f",
@@ -6368,8 +6221,8 @@
       ]
     },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\token\\ERC20\\ERC20.sol": {
-      "lastModificationDate": 1607238663581,
-      "contentHash": "8d2f149b39a2d5ec0165e6f4c29344df",
+      "lastModificationDate": 1607498568241,
+      "contentHash": "f3783ec5fb628d87eb7c0f1fbe585a06",
       "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/token/ERC20/ERC20.sol",
       "solcConfig": {
         "version": "0.7.4",
@@ -6397,7 +6250,7 @@
         "hardhat/console.sol",
         "../../security/Context.sol",
         "./IERC20.sol",
-        "../../utils/math/SafeMath.sol"
+        "../../math/SafeMath.sol"
       ],
       "versionPragmas": [
         "0.7.4"
@@ -6484,8 +6337,8 @@
       ]
     },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\token\\ERC20\\ERC20Burnable.sol": {
-      "lastModificationDate": 1607238663583,
-      "contentHash": "b9cc0d62a3727e38f7c34c828ddcd31d",
+      "lastModificationDate": 1607498598253,
+      "contentHash": "698ce29062dd2cc4f27f3d08afec8cd4",
       "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/token/ERC20/ERC20Burnable.sol",
       "solcConfig": {
         "version": "0.7.4",
@@ -6513,7 +6366,7 @@
         "hardhat/console.sol",
         "../../security/Context.sol",
         "./ERC20.sol",
-        "../../utils/math/SafeMath.sol"
+        "../../math/SafeMath.sol"
       ],
       "versionPragmas": [
         "0.7.4"
@@ -6559,8 +6412,8 @@
       ]
     },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\payment\\PaymentSplitter.sol": {
-      "lastModificationDate": 1607238663544,
-      "contentHash": "f7f36be9f923d5db98e898f32549658c",
+      "lastModificationDate": 1607532412412,
+      "contentHash": "64a6056697002b36da6bdf20f43aa00b",
       "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/payment/PaymentSplitter.sol",
       "solcConfig": {
         "version": "0.7.4",
@@ -6587,7 +6440,7 @@
       "imports": [
         "hardhat/console.sol",
         "../security/Context.sol",
-        "../utils/math/SafeMath.sol"
+        "../math/SafeMath.sol"
       ],
       "versionPragmas": [
         "0.7.4"
@@ -6638,8 +6491,8 @@
       ]
     },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\token\\ERC1155\\ERC1155.sol": {
-      "lastModificationDate": 1607238663567,
-      "contentHash": "73d80536b7607da28e11e591c38840fb",
+      "lastModificationDate": 1607498542679,
+      "contentHash": "f24a5b7af24a6b45c7fae05502218624",
       "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/token/ERC1155/ERC1155.sol",
       "solcConfig": {
         "version": "0.7.4",
@@ -6670,7 +6523,7 @@
         "./IERC1155Receiver.sol",
         "../../security/Context.sol",
         "../../introspection/ERC165.sol",
-        "../../utils/math/SafeMath.sol",
+        "../../math/SafeMath.sol",
         "../../utils/Address.sol"
       ],
       "versionPragmas": [
@@ -6864,81 +6717,6 @@
       ],
       "artifacts": [
         "IERC1155Receiver"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ERC1155Mock.sol": {
-      "lastModificationDate": 1607238663493,
-      "contentHash": "05223f5dd710a64e6015d364c67c5b72",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ERC1155Mock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../token/ERC1155/ERC1155.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ERC1155Mock"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ERC1155PausableMock.sol": {
-      "lastModificationDate": 1607238663493,
-      "contentHash": "cd0799481d7a43b1f5ef64c1c4cda157",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ERC1155PausableMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "./ERC1155Mock.sol",
-        "../token/ERC1155/ERC1155Pausable.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ERC1155PausableMock"
       ]
     },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\proxy\\UpgradeableBeacon.sol": {
@@ -7238,46 +7016,9 @@
         "BeaconProxy"
       ]
     },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\OwnableMock.sol": {
-      "lastModificationDate": 1607238663525,
-      "contentHash": "7079c5ba849efa70b5d8feda6a818cd5",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/OwnableMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../access/Ownable.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "OwnableMock"
-      ]
-    },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\payment\\escrow\\Escrow.sol": {
-      "lastModificationDate": 1607238663541,
-      "contentHash": "67b088d37c9aa16631743cd005d8a845",
+      "lastModificationDate": 1607497426374,
+      "contentHash": "c8525af35ed7098367e198ace3fea680",
       "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/payment/escrow/Escrow.sol",
       "solcConfig": {
         "version": "0.7.4",
@@ -7303,7 +7044,7 @@
       },
       "imports": [
         "hardhat/console.sol",
-        "../../utils/math/SafeMath.sol",
+        "../../math/SafeMath.sol",
         "../../access/Ownable.sol",
         "../../utils/Address.sol"
       ],
@@ -7349,43 +7090,6 @@
       ],
       "artifacts": [
         "PullPayment"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\PullPaymentMock.sol": {
-      "lastModificationDate": 1607238663527,
-      "contentHash": "a1ba4c4ed336ff47ec02b9384ce89597",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/PullPaymentMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../payment/PullPayment.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "PullPaymentMock"
       ]
     },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\payment\\escrow\\ConditionalEscrow.sol": {
@@ -7462,46 +7166,9 @@
         "RefundEscrow"
       ]
     },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ConditionalEscrowMock.sol": {
-      "lastModificationDate": 1607238663480,
-      "contentHash": "30b1f1fc1535145a48e9eafb6ff086cf",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ConditionalEscrowMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../payment/escrow/ConditionalEscrow.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ConditionalEscrowMock"
-      ]
-    },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\GSN\\GSNRecipientERC20Fee.sol": {
-      "lastModificationDate": 1607238663437,
-      "contentHash": "effa2415ccb25889d6adc0ad9fef4916",
+      "lastModificationDate": 1607497356537,
+      "contentHash": "e6afc4d122d49dc3db755512f1bf7524",
       "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/GSN/GSNRecipientERC20Fee.sol",
       "solcConfig": {
         "version": "0.7.4",
@@ -7525,21 +7192,9 @@
           }
         }
       },
-      "imports": [
-        "hardhat/console.sol",
-        "./GSNRecipient.sol",
-        "../utils/math/SafeMath.sol",
-        "../access/Ownable.sol",
-        "../token/ERC20/SafeERC20.sol",
-        "../token/ERC20/ERC20.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "GSNRecipientERC20Fee",
-        "__unstable__ERC20Owned"
-      ]
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": []
     },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\GSN\\GSNRecipient.sol": {
       "lastModificationDate": 1607238663437,
@@ -7581,8 +7236,8 @@
       ]
     },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\token\\ERC20\\SafeERC20.sol": {
-      "lastModificationDate": 1607238663588,
-      "contentHash": "360f5c3e18251c2941e20b0d6cbb9110",
+      "lastModificationDate": 1607498840529,
+      "contentHash": "6838cdc933668439ef44bad589a48065",
       "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/token/ERC20/SafeERC20.sol",
       "solcConfig": {
         "version": "0.7.4",
@@ -7609,7 +7264,7 @@
       "imports": [
         "hardhat/console.sol",
         "./IERC20.sol",
-        "../../utils/math/SafeMath.sol",
+        "../../math/SafeMath.sol",
         "../../utils/Address.sol"
       ],
       "versionPragmas": [
@@ -7691,82 +7346,6 @@
         "IRelayHub"
       ]
     },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\GSNRecipientERC20FeeMock.sol": {
-      "lastModificationDate": 1607238663511,
-      "contentHash": "7c61e12043d42a166a15a992a11312cd",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/GSNRecipientERC20FeeMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../GSN/GSNRecipient.sol",
-        "../GSN/GSNRecipientERC20Fee.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "GSNRecipientERC20FeeMock"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\GSNRecipientSignatureMock.sol": {
-      "lastModificationDate": 1607238663518,
-      "contentHash": "a861617dd38ee7637f3e422dd0392ec6",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/GSNRecipientSignatureMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../GSN/GSNRecipient.sol",
-        "../GSN/GSNRecipientSignature.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "GSNRecipientSignatureMock"
-      ]
-    },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\GSN\\GSNRecipientSignature.sol": {
       "lastModificationDate": 1607238663438,
       "contentHash": "62f791a4c324dddb67c7e2803bba0e77",
@@ -7841,82 +7420,6 @@
         "ECDSA"
       ]
     },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ERC721GSNRecipientMock.sol": {
-      "lastModificationDate": 1607238663508,
-      "contentHash": "62712f261543413a523445eb6888b481",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ERC721GSNRecipientMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../token/ERC721/ERC721.sol",
-        "../GSN/GSNRecipient.sol",
-        "../GSN/GSNRecipientSignature.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ERC721GSNRecipientMock"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\EIP712External.sol": {
-      "lastModificationDate": 1607238663486,
-      "contentHash": "7b43463892ffa5ed8a4babc726b529f0",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/EIP712External.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "../drafts/EIP712.sol",
-        "../cryptography/ECDSA.sol"
-      ],
-      "versionPragmas": [
-        ">=0.6.0 <0.8.0"
-      ],
-      "artifacts": [
-        "EIP712External"
-      ]
-    },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\drafts\\EIP712.sol": {
       "lastModificationDate": 1607238663436,
       "contentHash": "c684386d8c02cf247ee86ab137e734b5",
@@ -7951,122 +7454,9 @@
         "EIP712"
       ]
     },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ECDSAMock.sol": {
-      "lastModificationDate": 1607238663486,
-      "contentHash": "e1584ac665e8b70bf8aaa711b051b2ee",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ECDSAMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../cryptography/ECDSA.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ECDSAMock"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\GSNRecipientMock.sol": {
-      "lastModificationDate": 1607238663516,
-      "contentHash": "f61b6e408445f61934dac2d0163a026e",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/GSNRecipientMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "./ContextMock.sol",
-        "../GSN/GSNRecipient.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "GSNRecipientMock"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ContextMock.sol": {
-      "lastModificationDate": 1607238663482,
-      "contentHash": "873d4d584c6553f662b3cc877597a0af",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ContextMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../security/Context.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ContextMock",
-        "ContextMockCaller"
-      ]
-    },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\token\\ERC20\\ERC20Snapshot.sol": {
-      "lastModificationDate": 1607238663584,
-      "contentHash": "61b786a905ac96b5adaf966799daa263",
+      "lastModificationDate": 1607498644628,
+      "contentHash": "be6539b88eb7c227b29aa17eb5d4795c",
       "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/token/ERC20/ERC20Snapshot.sol",
       "solcConfig": {
         "version": "0.7.4",
@@ -8092,9 +7482,9 @@
       },
       "imports": [
         "hardhat/console.sol",
-        "../../utils/math/SafeMath.sol",
+        "../../math/SafeMath.sol",
         "../../utils/Arrays.sol",
-        "../../utils/Counters.sol",
+        "../../math/Counters.sol",
         "./ERC20.sol"
       ],
       "versionPragmas": [
@@ -8105,8 +7495,8 @@
       ]
     },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\utils\\Arrays.sol": {
-      "lastModificationDate": 1607238663610,
-      "contentHash": "7063298c5dbde752bb8cdd5fb4f6828d",
+      "lastModificationDate": 1607497397873,
+      "contentHash": "fb3bf59d7087acaaf2aa3f3973f26e2d",
       "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/utils/Arrays.sol",
       "solcConfig": {
         "version": "0.7.4",
@@ -8132,7 +7522,7 @@
       },
       "imports": [
         "hardhat/console.sol",
-        "./math/Math.sol"
+        "../math/Math.sol"
       ],
       "versionPragmas": [
         "0.7.4"
@@ -8141,267 +7531,9 @@
         "Arrays"
       ]
     },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\utils\\math\\Math.sol": {
-      "lastModificationDate": 1607238663619,
-      "contentHash": "a251cd1ccecc71f865be36664dad6e72",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/utils/math/Math.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "Math"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\CountersImpl.sol": {
-      "lastModificationDate": 1607238663482,
-      "contentHash": "4226c6e29740c4a8dbe4b98ab1924cb6",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/CountersImpl.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../utils/Counters.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "CountersImpl"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\MathMock.sol": {
-      "lastModificationDate": 1607238663520,
-      "contentHash": "250b95db459b5e2b297ac7e7ae91489b",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/MathMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../utils/math/Math.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "MathMock"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ArraysImpl.sol": {
-      "lastModificationDate": 1607238663477,
-      "contentHash": "5c727f19df244431a0241cddc0f8cd11",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ArraysImpl.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../utils/Arrays.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ArraysImpl"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ERC20SnapshotMock.sol": {
-      "lastModificationDate": 1607238663506,
-      "contentHash": "5343817072ad83b2b044c1905a8ed28f",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ERC20SnapshotMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../token/ERC20/ERC20Snapshot.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ERC20SnapshotMock"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ERC20Mock.sol": {
-      "lastModificationDate": 1607238663504,
-      "contentHash": "49fc370a929a8f0995471594cff31c68",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ERC20Mock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../token/ERC20/ERC20.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ERC20Mock"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ERC20DecimalsMock.sol": {
-      "lastModificationDate": 1607238663503,
-      "contentHash": "18750dbe9581e29866e12b16d36f48d2",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ERC20DecimalsMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../token/ERC20/ERC20.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ERC20DecimalsMock"
-      ]
-    },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\token\\ERC20\\ERC20Capped.sol": {
-      "lastModificationDate": 1607238663581,
-      "contentHash": "6b4d8bf2378ea6da1be9456e4a9905c8",
+      "lastModificationDate": 1607498613870,
+      "contentHash": "201016a97378cc8abc1bf5e273d164e3",
       "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/token/ERC20/ERC20Capped.sol",
       "solcConfig": {
         "version": "0.7.4",
@@ -8428,92 +7560,13 @@
       "imports": [
         "hardhat/console.sol",
         "./ERC20.sol",
-        "../../utils/math/SafeMath.sol"
+        "../../math/SafeMath.sol"
       ],
       "versionPragmas": [
         "0.7.4"
       ],
       "artifacts": [
         "ERC20Capped"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ERC20CappedMock.sol": {
-      "lastModificationDate": 1607238663500,
-      "contentHash": "eeb34b02a25ae2fee0a34c0f6258fb8a",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ERC20CappedMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../token/ERC20/ERC20Capped.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ERC20CappedMock"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\SafeERC20Helper.sol": {
-      "lastModificationDate": 1607238663535,
-      "contentHash": "23705f433c84deeef5997d1449740b74",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/SafeERC20Helper.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../security/Context.sol",
-        "../token/ERC20/IERC20.sol",
-        "../token/ERC20/SafeERC20.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ERC20NoReturnMock",
-        "ERC20ReturnFalseMock",
-        "ERC20ReturnTrueMock",
-        "SafeERC20Wrapper"
       ]
     },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\token\\ERC20\\TokenTimelock.sol": {
@@ -8554,8 +7607,8 @@
       ]
     },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\token\\ERC777\\ERC777.sol": {
-      "lastModificationDate": 1607238663603,
-      "contentHash": "2166967e2daa8eda94f1abe4e132ea40",
+      "lastModificationDate": 1607498727482,
+      "contentHash": "97d49cc5d7de96bcc80987f5a1c47bd0",
       "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/token/ERC777/ERC777.sol",
       "solcConfig": {
         "version": "0.7.4",
@@ -8586,7 +7639,7 @@
         "./IERC777Recipient.sol",
         "./IERC777Sender.sol",
         "../../token/ERC20/IERC20.sol",
-        "../../utils/math/SafeMath.sol",
+        "../../math/SafeMath.sol",
         "../../utils/Address.sol",
         "../../introspection/IERC1820Registry.sol"
       ],
@@ -8777,48 +7830,6 @@
         "ERC777PresetFixedSupply"
       ]
     },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ERC777SenderRecipientMock.sol": {
-      "lastModificationDate": 1607238663510,
-      "contentHash": "ef83982db5cf3e5b7ac1c3fb36e84f1a",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ERC777SenderRecipientMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../security/Context.sol",
-        "../token/ERC777/IERC777.sol",
-        "../token/ERC777/IERC777Sender.sol",
-        "../token/ERC777/IERC777Recipient.sol",
-        "../introspection/IERC1820Registry.sol",
-        "../introspection/ERC1820Implementer.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ERC777SenderRecipientMock"
-      ]
-    },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\introspection\\ERC1820Implementer.sol": {
       "lastModificationDate": 1607238663447,
       "contentHash": "82b36731e916eb70acf6f2087d37fb93",
@@ -8892,81 +7903,6 @@
         "IERC1820Implementer"
       ]
     },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ERC1820ImplementerMock.sol": {
-      "lastModificationDate": 1607238663497,
-      "contentHash": "15ebea294220f0308d240d2e75600ab0",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ERC1820ImplementerMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../introspection/ERC1820Implementer.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ERC1820ImplementerMock"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\Create2Impl.sol": {
-      "lastModificationDate": 1607238663483,
-      "contentHash": "b86d31dd7f4dc8d9cf636cf10e413827",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/Create2Impl.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../utils/Create2.sol",
-        "../introspection/ERC1820Implementer.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "Create2Impl"
-      ]
-    },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\utils\\Create2.sol": {
       "lastModificationDate": 1607238663615,
       "contentHash": "79e6f748e7ff0d917ac4bafb5f1abb12",
@@ -9003,121 +7939,9 @@
         "Create2"
       ]
     },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ERC777Mock.sol": {
-      "lastModificationDate": 1607238663509,
-      "contentHash": "27c0ca2ca740527e527cc8ecdbfa9210",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ERC777Mock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../security/Context.sol",
-        "../token/ERC777/ERC777.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ERC777Mock"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\AddressImpl.sol": {
-      "lastModificationDate": 1607238663476,
-      "contentHash": "f3da71898b2c27d7fe679ec98deee8a7",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/AddressImpl.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../utils/Address.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "AddressImpl"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\AccessControlMock.sol": {
-      "lastModificationDate": 1607238663475,
-      "contentHash": "d35faae01b232475b96fe8571d8312b1",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/AccessControlMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../access/AccessControl.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "AccessControlMock"
-      ]
-    },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\access\\TimelockController.sol": {
-      "lastModificationDate": 1607238663434,
-      "contentHash": "1ef95605333de4ae9fa48ab6279bc333",
+      "lastModificationDate": 1607497271954,
+      "contentHash": "7b375b26dcb42846d88a9d8aeeaa301d",
       "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/access/TimelockController.sol",
       "solcConfig": {
         "version": "0.7.4",
@@ -9143,7 +7967,7 @@
       },
       "imports": [
         "hardhat/console.sol",
-        "./../utils/math/SafeMath.sol",
+        "./../math/SafeMath.sol",
         "./AccessControl.sol"
       ],
       "versionPragmas": [
@@ -9151,45 +7975,6 @@
       ],
       "artifacts": [
         "TimelockController"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\EnumerableSetMock.sol": {
-      "lastModificationDate": 1607238663490,
-      "contentHash": "2a97bcb698a12670cb443151b5d68ca9",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/EnumerableSetMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../datatypes/collections/EnumerableSet.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "EnumerableAddressSetMock",
-        "EnumerableBytes32SetMock",
-        "EnumerableUintSetMock"
       ]
     },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\datatypes\\structs\\RoleData.sol": {
@@ -9229,8 +8014,8 @@
       ]
     },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\libraries\\security\\RoleManager.sol": {
-      "lastModificationDate": 1607244866355,
-      "contentHash": "912c9ff2ac058a64ddaf8c6ba8841b4f",
+      "lastModificationDate": 1607495974202,
+      "contentHash": "77869f3cf631cc2988ed6ab73e5c0096",
       "sourceName": "contracts/dependencies/authorization-platform/contracts/libraries/security/RoleManager.sol",
       "solcConfig": {
         "version": "0.7.4",
@@ -9257,7 +8042,9 @@
       "imports": [
         "../../dependencies/holyzeppelin/contracts/datatypes/collections/EnumerableSet.sol"
       ],
-      "versionPragmas": [],
+      "versionPragmas": [
+        "0.7.4"
+      ],
       "artifacts": [
         "RoleManager"
       ]
@@ -9336,119 +8123,6 @@
         "ERC1155Receiver"
       ]
     },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ERC1155ReceiverMock.sol": {
-      "lastModificationDate": 1607238663494,
-      "contentHash": "b535e45225f11ae17eb596b1e9809bf6",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ERC1155ReceiverMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../token/ERC1155/IERC1155Receiver.sol",
-        "./ERC165Mock.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ERC1155ReceiverMock"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ERC165Mock.sol": {
-      "lastModificationDate": 1607238663497,
-      "contentHash": "d299f3c871ef2e1c5fb1938092e8a96a",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ERC165Mock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../introspection/ERC165.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ERC165Mock"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ERC165\\ERC165InterfacesSupported.sol": {
-      "lastModificationDate": 1607238663495,
-      "contentHash": "6a6767a0d5c99a5197b9e7f6ee7fe632",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ERC165/ERC165InterfacesSupported.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../../introspection/IERC165.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ERC165InterfacesSupported",
-        "SupportsInterfaceWithLookupMock"
-      ]
-    },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\token\\ERC1155\\ERC1155Holder.sol": {
       "lastModificationDate": 1607238663569,
       "contentHash": "282946204489cdb8bab877ea64cb5f5c",
@@ -9484,118 +8158,6 @@
       ],
       "artifacts": [
         "ERC1155Holder"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ERC1155BurnableMock.sol": {
-      "lastModificationDate": 1607238663491,
-      "contentHash": "47bd12efb342d215f946705bf00d2357",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ERC1155BurnableMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../token/ERC1155/ERC1155Burnable.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ERC1155BurnableMock"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ReentrancyAttack.sol": {
-      "lastModificationDate": 1607238663527,
-      "contentHash": "4cc00b90d71f18532319ae5963a67f2b",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ReentrancyAttack.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../security/Context.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ReentrancyAttack"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ReentrancyMock.sol": {
-      "lastModificationDate": 1607238663528,
-      "contentHash": "c53315e0c627e8a431a66348baa8a170",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ReentrancyMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../utils/ReentrancyGuard.sol",
-        "./ReentrancyAttack.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ReentrancyMock"
       ]
     },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\utils\\ReentrancyGuard.sol": {
@@ -9634,450 +8196,6 @@
         "ReentrancyGuard"
       ]
     },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ERC721BurnableMock.sol": {
-      "lastModificationDate": 1607238663507,
-      "contentHash": "db64c7533059ede8bb1cb5e35fab6268",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ERC721BurnableMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../token/ERC721/ERC721Burnable.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ERC721BurnableMock"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\SafeMathMock.sol": {
-      "lastModificationDate": 1607238663537,
-      "contentHash": "245085c1e432edf3ee5437a30bb2153b",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/SafeMathMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../utils/math/SafeMath.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "SafeMathMock"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\StringsMock.sol": {
-      "lastModificationDate": 1607238663538,
-      "contentHash": "ce620acf96ab153f7eb98fb1cd8c83dd",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/StringsMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../utils/Strings.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "StringsMock"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\libraries\\datatypes\\time\\DateTime.sol": {
-      "lastModificationDate": 1607238663464,
-      "contentHash": "c21b0de863c006271afc6209c20ac434",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/libraries/datatypes/time/DateTime.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "./../../../utils/math/SafeMath.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "DateTime"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\utils\\time\\SafeDateTime.sol": {
-      "lastModificationDate": 1607238663631,
-      "contentHash": "d3a1c29ac139ba539bb752ec406821ad",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/utils/time/SafeDateTime.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "../../libraries/datatypes/time/DateTime.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "SafeDateTime"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\utils\\time\\interfaces\\IDateTime.sol": {
-      "lastModificationDate": 1607238663629,
-      "contentHash": "b10d7d811287bb65eb7eaad24c09024d",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/utils/time/interfaces/IDateTime.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./../../../libraries/datatypes/time/DateTime.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "IDateTime"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ERC20BurnableMock.sol": {
-      "lastModificationDate": 1607238663497,
-      "contentHash": "0db928c972bde1f13d48945982d4409d",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ERC20BurnableMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../token/ERC20/ERC20Burnable.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ERC20BurnableMock"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ERC20PausableMock.sol": {
-      "lastModificationDate": 1607238663504,
-      "contentHash": "6030d722d77197cfa73a492e4ee78b7d",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ERC20PausableMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../token/ERC20/ERC20Pausable.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ERC20PausableMock"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ERC721PausableMock.sol": {
-      "lastModificationDate": 1607238663509,
-      "contentHash": "9a22b4199f2bfbc2b83de60d5c51f0b7",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ERC721PausableMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../token/ERC721/ERC721Pausable.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ERC721PausableMock"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ERC721Mock.sol": {
-      "lastModificationDate": 1607238663507,
-      "contentHash": "39ee5436b05cabf9bb6990ade6c216f8",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ERC721Mock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../token/ERC721/ERC721.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ERC721Mock"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\EnumerableMapMock.sol": {
-      "lastModificationDate": 1607238663487,
-      "contentHash": "bf32e91e78eb2b90bc292dbd3673bea9",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/EnumerableMapMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../utils/EnumerableMap.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "EnumerableMapMock"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\SingleInheritanceInitializableMocks.sol": {
-      "lastModificationDate": 1607238663538,
-      "contentHash": "c4fc7a2e6c8195cf110fd56f5f51f182",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/SingleInheritanceInitializableMocks.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../proxy/Initializable.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "MigratableMockV1",
-        "MigratableMockV2",
-        "MigratableMockV3"
-      ]
-    },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\proxy\\Initializable.sol": {
       "lastModificationDate": 1607238663557,
       "contentHash": "ca6c125a63580ff963b78cb1ff9cd697",
@@ -10112,197 +8230,6 @@
       ],
       "artifacts": [
         "Initializable"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\RegressionImplementation.sol": {
-      "lastModificationDate": 1607238663529,
-      "contentHash": "dadcce73377e5bffddaebf0000a7af4c",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/RegressionImplementation.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../proxy/Initializable.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "Implementation1",
-        "Implementation2",
-        "Implementation3",
-        "Implementation4"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\MultipleInheritanceInitializableMocks.sol": {
-      "lastModificationDate": 1607238663523,
-      "contentHash": "0c34af42c7637f8222b4697e3591a63c",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/MultipleInheritanceInitializableMocks.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../proxy/Initializable.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "SampleChild",
-        "SampleFather",
-        "SampleGramps",
-        "SampleHuman",
-        "SampleMother"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\InitializableMock.sol": {
-      "lastModificationDate": 1607238663520,
-      "contentHash": "d1ed81e42d8e6c037344d13833cc01e2",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/InitializableMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../proxy/Initializable.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "InitializableMock"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\utils\\math\\SignedSafeMath.sol": {
-      "lastModificationDate": 1607238663623,
-      "contentHash": "ecdaa572d8d6aeb1fe3cb6be87e96526",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/utils/math/SignedSafeMath.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "SignedSafeMath"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\SignedSafeMathMock.sol": {
-      "lastModificationDate": 1607238663537,
-      "contentHash": "3eb0f05ca99d464d16338f8778f6b7ba",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/SignedSafeMathMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../utils/math/SignedSafeMath.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "SignedSafeMathMock"
       ]
     },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\utils\\SafeCast.sol": {
@@ -10341,80 +8268,6 @@
         "SafeCast"
       ]
     },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\SafeCastMock.sol": {
-      "lastModificationDate": 1607238663532,
-      "contentHash": "5c21f09bf799c29f58a73958f91c0b17",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/SafeCastMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../utils/SafeCast.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "SafeCastMock"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\MerkleProofWrapper.sol": {
-      "lastModificationDate": 1607238663523,
-      "contentHash": "35bc0287a27cfe610e4b2bf7ac804afc",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/MerkleProofWrapper.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../cryptography/MerkleProof.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "MerkleProofWrapper"
-      ]
-    },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\cryptography\\MerkleProof.sol": {
       "lastModificationDate": 1607238663434,
       "contentHash": "762184a5c7e17a72dd5909c3ca5e407e",
@@ -10449,79 +8302,6 @@
       ],
       "artifacts": [
         "MerkleProof"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\EtherReceiverMock.sol": {
-      "lastModificationDate": 1607238663510,
-      "contentHash": "762319d6f865135ae354164463768039",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/EtherReceiverMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "EtherReceiverMock"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ERC165CheckerMock.sol": {
-      "lastModificationDate": 1607238663495,
-      "contentHash": "60d7fe7820fda6610a2d1ecdcd743467",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ERC165CheckerMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "../introspection/ERC165Checker.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ERC165CheckerMock"
       ]
     },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\introspection\\ERC165Checker.sol": {
@@ -10560,155 +8340,9 @@
         "ERC165Checker"
       ]
     },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ERC165\\ERC165NotSupported.sol": {
-      "lastModificationDate": 1607238663496,
-      "contentHash": "ab0f8afe2d63aab52ddc1a3bdcbc3316",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ERC165/ERC165NotSupported.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ERC165NotSupported"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\DummyImplementation.sol": {
-      "lastModificationDate": 1607238663486,
-      "contentHash": "9ad2d33da41cadb816e94f426144847b",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/DummyImplementation.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "DummyImplementation",
-        "DummyImplementationV2",
-        "Impl"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\ClashingImplementation.sol": {
-      "lastModificationDate": 1607238663479,
-      "contentHash": "059595aae1a9695f24ba155f8a434784",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/ClashingImplementation.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "ClashingImplementation"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\CallReceiverMock.sol": {
-      "lastModificationDate": 1607238663478,
-      "contentHash": "8017bdb38b651359981b07b7d82a3306",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/CallReceiverMock.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol"
-      ],
-      "versionPragmas": [
-        "0.7.4"
-      ],
-      "artifacts": [
-        "CallReceiverMock"
-      ]
-    },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\math\\SafeMath.sol": {
-      "lastModificationDate": 1607238663474,
-      "contentHash": "a95cf93acb8b491b3572a36d22527b46",
+      "lastModificationDate": 1607496955259,
+      "contentHash": "bac53023b5fa30af91f31c8bed30a4ee",
       "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/math/SafeMath.sol",
       "solcConfig": {
         "version": "0.7.4",
@@ -10885,8 +8519,8 @@
       ]
     },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\datatypes\\primitives\\Bytes32.sol": {
-      "lastModificationDate": 1607486986239,
-      "contentHash": "461799d90c892db634da344913b735c5",
+      "lastModificationDate": 1607497307230,
+      "contentHash": "3e3ebb89ed0c48b56d722e8c0c7c04a1",
       "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/datatypes/primitives/Bytes32.sol",
       "solcConfig": {
         "version": "0.7.4",
@@ -10912,7 +8546,7 @@
       },
       "imports": [
         "hardhat/console.sol",
-        "../../utils/math/SafeMath.sol"
+        "../../math/SafeMath.sol"
       ],
       "versionPragmas": [
         "0.7.4"
@@ -11695,75 +9329,6 @@
       ],
       "artifacts": [
         "SignedSafeMath"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\mocks\\BadBeacon.sol": {
-      "lastModificationDate": 1607238663477,
-      "contentHash": "baaa801936349dc8c094db41ad38a705",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/mocks/BadBeacon.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.6.0 <0.8.0"
-      ],
-      "artifacts": [
-        "BadBeaconNoImpl",
-        "BadBeaconNotContract"
-      ]
-    },
-    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\utils\\EnumerableSet.sol": {
-      "lastModificationDate": 1607238663618,
-      "contentHash": "66219effa42a553ef50ed31fb7217ffd",
-      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/utils/EnumerableSet.sol",
-      "solcConfig": {
-        "version": "0.7.4",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.6.0 <0.8.0"
-      ],
-      "artifacts": [
-        "EnumerableSet"
       ]
     },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\wip\\abstract\\AccessControl.sol": {
@@ -13728,6 +11293,150 @@
       "imports": [],
       "versionPragmas": [],
       "artifacts": []
+    },
+    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\math\\Counters.sol": {
+      "lastModificationDate": 1607497476088,
+      "contentHash": "ea4a1e9b96be024ef4cebad17e03704d",
+      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/math/Counters.sol",
+      "solcConfig": {
+        "version": "0.7.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol",
+        "./SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.7.4"
+      ],
+      "artifacts": [
+        "Counters"
+      ]
+    },
+    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\time\\datatypes\\Time.sol": {
+      "lastModificationDate": 1607536489500,
+      "contentHash": "045b0603492f6423e54299fba751823d",
+      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/time/datatypes/Time.sol",
+      "solcConfig": {
+        "version": "0.7.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol",
+        "./../../math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.7.4"
+      ],
+      "artifacts": [
+        "Time"
+      ]
+    },
+    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\time\\SafeDateTime.sol": {
+      "lastModificationDate": 1607537506627,
+      "contentHash": "be14f76c600b69d581dedf31102ee0e0",
+      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/time/SafeDateTime.sol",
+      "solcConfig": {
+        "version": "0.7.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./datatypes/Time.sol"
+      ],
+      "versionPragmas": [
+        "0.7.4"
+      ],
+      "artifacts": [
+        "SafeDateTime"
+      ]
+    },
+    "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\time\\interfaces\\IDateTime.sol": {
+      "lastModificationDate": 1607496661128,
+      "contentHash": "8ef25e2edff6978a9b494b9afdecc8ff",
+      "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/time/interfaces/IDateTime.sol",
+      "solcConfig": {
+        "version": "0.7.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.7.4"
+      ],
+      "artifacts": [
+        "IDateTime"
+      ]
     }
   }
 }
