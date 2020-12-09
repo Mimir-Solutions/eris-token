@@ -260,8 +260,8 @@
       ]
     },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\ErisToken.sol": {
-      "lastModificationDate": 1607237275949,
-      "contentHash": "6760c071e8add82e1d142bc453d8c825",
+      "lastModificationDate": 1607320521758,
+      "contentHash": "6db8f3922a1630d55ccabe9e830d2e2c",
       "sourceName": "contracts/ErisToken.sol",
       "solcConfig": {
         "version": "0.7.4",
@@ -5917,7 +5917,7 @@
       ]
     },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\datatypes\\collections\\EnumerableSet.sol": {
-      "lastModificationDate": 1607242646671,
+      "lastModificationDate": 1607486986241,
       "contentHash": "d036c810bd9299920a4a7d67227b167a",
       "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/datatypes/collections/EnumerableSet.sol",
       "solcConfig": {
@@ -10885,8 +10885,8 @@
       ]
     },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\datatypes\\primitives\\Bytes32.sol": {
-      "lastModificationDate": 1607240253275,
-      "contentHash": "97596b166d865b515f5823ad43e9ca2f",
+      "lastModificationDate": 1607486986239,
+      "contentHash": "461799d90c892db634da344913b735c5",
       "sourceName": "contracts/dependencies/authorization-platform/contracts/dependencies/holyzeppelin/contracts/datatypes/primitives/Bytes32.sol",
       "solcConfig": {
         "version": "0.7.4",
@@ -10910,9 +10910,16 @@
           }
         }
       },
-      "imports": [],
-      "versionPragmas": [],
-      "artifacts": []
+      "imports": [
+        "hardhat/console.sol",
+        "../../utils/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.7.4"
+      ],
+      "artifacts": [
+        "Bytes32"
+      ]
     },
     "D:\\dev\\github-mimir-solutions\\mimir-projects\\pantheon-ecosystem\\contracts\\dependencies\\eris-token\\contracts\\dependencies\\authorization-platform\\contracts\\dependencies\\holyzeppelin\\contracts\\datatypes\\primitives\\SafeCast.sol": {
       "lastModificationDate": 1607240253277,
