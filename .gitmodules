@@ -1,0 +1,3 @@
+[submodule "contracts/dependencies/holyzeppelin"]
+	path = contracts/dependencies/holyzeppelin
+	url = git@github.com:Mimir-Solutions/holyzeppelin.git

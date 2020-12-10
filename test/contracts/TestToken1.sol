@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
-pragma solidity 0.7.4;
+pragma solidity 0.7.5;
 
 import "hardhat/console.sol";
 
 import "../../contracts/dependencies/holyzeppelin/contracts/token/ERC20/ERC20.sol";
-import "../../contracts/dependencies/holyzeppelin/contracts/utils/math/SafeMath.sol";
+import "../../contracts/dependencies/holyzeppelin/contracts/math/SafeMath.sol";
 import "../../contracts/dependencies/holyzeppelin/contracts/datatypes/primitives/Address.sol";
 
 contract TestToken1 is ERC20 {

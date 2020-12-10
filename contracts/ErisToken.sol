@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
-pragma solidity 0.7.4;
+pragma solidity 0.7.5;
 
 import "hardhat/console.sol";
 
 import "./abstract/Divine.sol";
-import "./dependencies/holyzeppelin/contracts/utils/math/SafeMath.sol";
+import "./dependencies/holyzeppelin/contracts/math/SafeMath.sol";
 
 contract ErisToken is Divine {
 
