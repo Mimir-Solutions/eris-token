@@ -6,14 +6,14 @@ import "hardhat/console.sol";
 import "./abstract/Divine.sol";
 import "./dependencies/holyzeppelin/contracts/math/SafeMath.sol";
 
-contract ErisToken is Divine {
+contract PantheonToken is Divine {
 
     using SafeMath for uint256;
 
     uint8 public transferFeePercentageX100;
     
-    constructor () Divine( "Eris", "ERIS" ) {
-        console.log("ErisToken::constructor: Instantiating ErisToken");
-        console.log("ErisToken::constructor: Instantiated ErisToken");
+    constructor () Divine( "Pantheon", "PANTHEON" ) {
+        console.log("PantheonToken::constructor: Instantiating PantheonToken");
+        console.log("PantheonToken::constructor: Instantiated PantheonToken");
     }
 }
