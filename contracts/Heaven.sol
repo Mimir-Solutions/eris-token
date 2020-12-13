@@ -6,10 +6,11 @@ import "hardhat/console.sol";
 import "./IERC1155.sol";
 import "./IERC1155MetadataURI.sol";
 import "./IERC1155Receiver.sol";
+import "../../datatypes/primitives/Address.sol";
 import "../../security/Context.sol";
 import "../../introspection/ERC165.sol";
 import "../../math/SafeMath.sol";
-import "../../datatypes/primitives/Address.sol";
+import "../../math/SafeMath.sol";
 
 /**
  *
@@ -19,14 +20,20 @@ import "../../datatypes/primitives/Address.sol";
  *
  * _Available since v3.1._
  */
-contract Heaven is ERC165, ERC1155 {
+contract Heaven is Divine, ERC165, ERC1155 {
     using SafeMath for uint256;
     using Address for address;
+    using Counters for Counters.Counter;
+
+    Counters.Counter private _wrappedTokenID;
 
     // Mapping from token ID to account balances
     mapping (uint256 => mapping(address => uint256)) private _balances;
 
-    mapping (uint256 => address) private _wrappedERC20s;
+    mapping (uint256 => address) private _wrappedERC20sByID;
+    mapping (address => uint256) private _wrappedERC20sByAddress;
+
+    mapping (uint256 => mapping (uint256 => address)) private _uniswapV2CompatiblePairs;
 
     // Mapping from account to operator approvals
     mapping (address => mapping(address => bool)) private _operatorApprovals;
@@ -62,6 +69,17 @@ contract Heaven is ERC165, ERC1155 {
 
         // register the supported interfaces to conform to ERC1155MetadataURI via ERC165
         _registerInterface(_INTERFACE_ID_ERC1155_METADATA_URI);
+
+        _wrappedERC20sByID[_wrappedTokenID.current()] = address(0);
+        _wrappedERC20sByAddress[address(0)] = _wrappedTokenID.current();
+    }
+
+    function wrapERC20(address tokenToWrap_) external virtual returns ( uint256 wrappedTokenID_ ) {
+        require(tokenToWrap_.isContract());
+        uint256 newTokenID_ = _wrappedTokenID.increment();
+        _wrappedERC20sByID[_wrappedTokenID.current()] = tokenToWrap_;
+        _wrappedERC20sByAddress[tokenToWrap_] = _wrappedTokenID.current();
+        return _wrappedTokenID.current();
     }
 
     /**
