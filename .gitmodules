@@ -1,3 +1,9 @@
 [submodule "contracts/dependencies/holyzeppelin"]
 	path = contracts/dependencies/holyzeppelin
 	url = git@github.com:Mimir-Solutions/holyzeppelin.git
+[submodule "test/contracts/uniswap-v2-core"]
+	path = test/contracts/uniswap-v2-core
+	url = git@github.com:Mimir-Solutions/uniswap-v2-core.git
+[submodule "test/contracts/uniswap-v2-periphery"]
+	path = test/contracts/uniswap-v2-periphery
+	url = git@github.com:Mimir-Solutions/uniswap-v2-periphery.git
