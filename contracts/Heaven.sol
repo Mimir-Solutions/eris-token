@@ -3,14 +3,15 @@ pragma solidity 0.7.5;
 
 import "hardhat/console.sol";
 
-import "./IERC1155.sol";
-import "./IERC1155MetadataURI.sol";
-import "./IERC1155Receiver.sol";
-import "../../datatypes/primitives/Address.sol";
-import "../../security/Context.sol";
-import "../../introspection/ERC165.sol";
-import "../../math/SafeMath.sol";
-import "../../math/SafeMath.sol";
+import "./dependencies/holyzeppelin/contracts/token/ERC1155/IERC1155.sol";
+import "./dependencies/holyzeppelin/contracts/token/ERC1155/IERC1155MetadataURI.sol";
+import "./dependencies/holyzeppelin/contracts/token/ERC1155/IERC1155Receiver.sol";
+import "./dependencies/holyzeppelin/contracts/datatypes/primitives/Address.sol";
+import "./dependencies/holyzeppelin/contracts/security/Context.sol";
+import "./dependencies/holyzeppelin/contracts/introspection/ERC165.sol";
+import "./dependencies/holyzeppelin/contracts/math/SafeMath.sol";
+
+import "./abstract/Divine.sol"";
 
 /**
  *
