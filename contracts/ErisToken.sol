@@ -12,7 +12,7 @@ contract ErisToken is Divine {
 
     uint8 public transferFeePercentageX100;
     
-    constructor () Divine( "Eris", "ERIS" ) {
+    constructor () Divine( "Eris", "ERIS", 18 ) {
         console.log("ErisToken::constructor: Instantiating ErisToken");
         console.log("ErisToken::constructor: Instantiated ErisToken");
     }

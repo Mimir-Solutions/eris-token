@@ -15,7 +15,7 @@ abstract contract Divine is ERC20Burnable {
 
     // bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
 
-    constructor ( string memory name_, string memory symbol_ ) ERC20( name_, symbol_ ) {
+    constructor ( string memory name_, string memory symbol_, uint8 decimals_ ) ERC20( name_, symbol_, decimals_ ) {
         console.log("Divine::constructor: Instantiating Divine");
         console.log("Divine::constructor: Instantiated Divine");
     }

@@ -12,7 +12,7 @@ contract PantheonToken is Divine {
 
     uint8 public transferFeePercentageX100;
     
-    constructor () Divine( "Pantheon", "PANTHEON" ) {
+    constructor () Divine( "Pantheon", "PANTHEON", 18 ) {
         console.log("PantheonToken::constructor: Instantiating PantheonToken");
         console.log("PantheonToken::constructor: Instantiated PantheonToken");
     }

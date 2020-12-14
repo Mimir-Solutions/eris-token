@@ -9,7 +9,7 @@ import "../../contracts/dependencies/holyzeppelin/contracts/datatypes/primitives
 
 contract TestToken2 is ERC20 {
 
-    constructor () ERC20( "TestToken2", "TT2" ) {
+    constructor () ERC20( "TestToken2", "TT2", 18 ) {
         console.log("TestToken2::constructor: Instantiating TestToken2");
         _mint(Context._msgSender(), 50000 * 1**decimals()  );
         console.log("TestToken2::constructor: Instantiated TestToken2");
