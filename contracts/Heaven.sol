@@ -11,7 +11,7 @@ import "./dependencies/holyzeppelin/contracts/security/Context.sol";
 import "./dependencies/holyzeppelin/contracts/introspection/ERC165.sol";
 import "./dependencies/holyzeppelin/contracts/math/SafeMath.sol";
 
-import "./abstract/Divine.sol"";
+import "./abstract/Divine.sol";
 
 /**
  *
