@@ -86,7 +86,7 @@ describe(
                 //Add check for events
                 eris = await ErisContract.connect( deployer ).deploy();
 
-                // erisWETHDEXPair = await uniswapV2Factory.connect( owner ).getPair( eris.address, weth.address);
+                erisWETHDEXPair = await uniswapV2Factory.connect( owner ).getPair( eris.address, weth.address);
             }
         );
 
